@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
+/* Erase the margin in the body */
+body {
+  margin: 0;
+}
+
 /* Make the nav responsive */
 nav {
   display: flex;
@@ -20,7 +25,10 @@ a {
   border-bottom: 1px solid #52c9aa;
 
   transition: color 0.5s ease-out;
+}
 
+i {
+  margin-right: 10px;
 }
 
 a:hover {
@@ -32,13 +40,24 @@ a:hover {
 /* Respond to the size of the browser */
 @media screen and (max-width: 920px) {
   nav {
-    justify-content: space-around;
+    justify-content: center;
   }
+
+  a {
+    font-size: 26px;
+  }
+
+
 }
 
 @media screen and (max-width: 600px) {
   nav {
     flex-direction: column;
     align-items: center;
+    background: grey;
+  }
+
+  a {
+    color: white;
   }
 }
