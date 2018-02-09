@@ -2,13 +2,34 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
+/* Make the nav responsive */
 nav {
   display: flex;
   flex-direction: row;
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
   justify-content: flex-end;
 }
 
+/* Make a nicer links in the nav */
+a {
+  font-size: 40px;
+  margin: 20px;
+  text-decoration: none;
+  color: #95a5a6;
+  font-family: raleway;
+  border-bottom: 1px solid #52c9aa;
+
+  transition: color 0.5s ease-out;
+
+}
+
+a:hover {
+  color: #3498db;
+  border-bottom-color: #3498db;
+}
+
+
+/* Respond to the size of the browser */
 @media screen and (max-width: 920px) {
   nav {
     justify-content: space-around;
